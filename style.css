@@ -1,0 +1,88 @@
+html, body, * {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--text-color-bright: #2bff2b;
+	--text-color-dim: #21ad21;
+	--text-color-alt: #368882;
+}
+
+body {
+	background-color: #000;
+	font-family: monospace;
+	font-size: 13px;
+	color: var(--text-color-bright);
+}
+
+#container {
+	margin: 6px auto;
+	padding-bottom: 5px;
+	min-width: 350px;
+	max-width: 450px;
+	outline: #12402080 1px solid;
+	position: relative;
+}
+
+.center {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color-dim);
+}
+a:visited {
+	text-decoration: none;
+	color: var(--text-color-dim);
+}
+a:hover {
+	background-color: #111;
+}
+
+#self-portrait {
+	margin: 5px 0;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	/*border: 1px solid white;*/
+}
+
+p {
+	margin: 10px;
+}
+
+.alt {
+	color: var(--text-color-alt);
+	font-style: italic;
+}
+
+.bright {
+	color: var(--text-color-bright);
+}
+
+.dim {
+	color: var(--text-color-dim);
+}
+
+/*
+.prompt .name {
+	color: #275e83;
+}
+.prompt .host {
+	color: #99d58f;
+}
+.prompt .arch {
+	color: #8df793;
+}
+.prompt .dir {
+	color: #cc8a89;
+}
+.prompt .sh {
+	color: #0f0;
+}
+.prompt .command {
+	color: #0f0;
+}
+*/
