@@ -21,8 +21,15 @@ body {
 	padding-bottom: 5px;
 	min-width: 350px;
 	max-width: 450px;
-	outline: #12402080 1px solid;
+	/*outline: #12402080 1px solid;*/
 	position: relative;
+}
+
+.section {
+}
+
+.command {
+	color: var(--text-color-alt);
 }
 
 .center {

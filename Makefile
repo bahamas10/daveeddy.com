@@ -18,3 +18,7 @@ clean:
 .PHONY: header
 header:
 	@to-html -N 'cat logo.txt'
+
+.PHONY: serve
+serve:
+	python3 -mhttp.server
