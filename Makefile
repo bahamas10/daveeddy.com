@@ -9,8 +9,12 @@ favicon.ico:
 
 .PHONY: deploy
 deploy:
-	rsync -avh --progress style.css index.html favicon.ico daveeddy.com:/var/www/daveeddy.com/
+	rsync -avh --progress style.css index.html favicon.ico web:/var/www/daveeddy.com/
 
 .PHONY: clean
 clean:
 	rm -f favicon.ico
+
+.PHONY: header
+header:
+	@to-html -N 'cat logo.txt'
