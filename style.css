@@ -28,6 +28,11 @@ body {
 .section {
 }
 
+.section h1 {
+	text-align: center;
+	color: var(--text-color-dim);
+}
+
 .command {
 	color: var(--text-color-alt);
 }
