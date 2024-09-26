@@ -9,7 +9,7 @@ favicon.ico:
 
 .PHONY: deploy
 deploy:
-	rsync -avh --progress style.css index.html favicon.ico web:/var/www/daveeddy.com/
+	rsync -avh --progress index.html favicon.ico web:/var/www/daveeddy.com/
 
 .PHONY: clean
 clean:
