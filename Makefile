@@ -1,3 +1,5 @@
+LIVE_SITE = ascii-style
+
 .PHONY: all
 all: build deploy
 
@@ -9,7 +11,7 @@ favicon.ico:
 
 .PHONY: deploy
 deploy:
-	rsync -avh --progress index.html favicon.ico web:/var/www/daveeddy.com/
+	rsync -avh --delete --progress favicon.ico $(LIVE_SITE)/ web:/var/www/daveeddy.com/
 
 .PHONY: clean
 clean:
